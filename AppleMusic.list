@@ -5,5 +5,4 @@ DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,music.apple.com
 DOMAIN-SUFFIX,www.applemusic.com
-DOMAIN-SUFFIX,itunes-apple.com.akadns.net
 PROCESS-NAME,Music
