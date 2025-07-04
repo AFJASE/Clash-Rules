@@ -1,5 +1,6 @@
 # NAME: AppleMusic
-# UPDATED: 2025-06-24
+# Content: non streaming cdn proxy, only information proxy
+# UPDATED: 2025-07-04
 
 DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,blobstore.apple.com
