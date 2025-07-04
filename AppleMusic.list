@@ -1,8 +1,6 @@
 # NAME: AppleMusic
 # UPDATED: 2025-06-24
 
-DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,itunes.g.aaplimg.com
 DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,music.apple.com
