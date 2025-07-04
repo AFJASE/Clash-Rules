@@ -1,5 +1,5 @@
 # NAME: AppleMusic
-# Content: non streaming cdn proxy, only information proxy
+# Content: non streaming cdn proxy, only information flow proxy
 # UPDATED: 2025-07-04
 
 DOMAIN-SUFFIX,applemusic.com
