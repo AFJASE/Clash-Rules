@@ -15,7 +15,6 @@ jobs:
 
     - name: Download and Convert AdGuardHome Rules
       run: |
-        # ADGUARD_URL="https://adguardteam.github.io/HostlistsRegistry/assets/filter_34.txt"
         ADGUARD_URL="https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt“
         OUTPUT_FILE="adguard_clash_rules.list"
 
