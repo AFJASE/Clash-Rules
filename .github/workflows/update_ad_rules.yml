@@ -15,7 +15,8 @@ jobs:
 
     - name: Download and Convert AdGuardHome Rules
       run: |
-        ADGUARD_URL="https://adguardteam.github.io/HostlistsRegistry/assets/filter_34.txt"
+        # ADGUARD_URL="https://adguardteam.github.io/HostlistsRegistry/assets/filter_34.txt"
+        ADGUARD_URL="https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"
         OUTPUT_FILE="adguard_clash_rules.list"
 
         echo "Downloading AdGuardHome rules from $ADGUARD_URL..."
