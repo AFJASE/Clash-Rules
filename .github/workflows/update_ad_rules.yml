@@ -15,8 +15,7 @@ jobs:
 
     - name: Download and Convert AdGuardHome Rules
       run: |
-        # ADGUARD_URL="https://adguardteam.github.io/HostlistsRegistry/assets/filter_34.txt"
-        ADGUARD_URL="https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"
+        ADGUARD_URL="https://adguardteam.github.io/HostlistsRegistry/assets/filter_34.txt"
         OUTPUT_FILE="adguard_clash_rules.list"
 
         echo "Downloading AdGuardHome rules from $ADGUARD_URL..."
@@ -28,16 +27,30 @@ jobs:
         fi
 
         echo "Converting rules to Clash DOMAIN-SUFFIX format..."
-        # 转换并过滤掉可能为空或注释的行
         awk '{
-          if ($1 !~ /^#|^!|^$/) {
-          gsub(/^\|\|/, "", $1);
-          gsub(/\^$/, "", $1);
+            # 移除 || 前缀和 ^ 后缀 (Adblock Plus / AdGuard 语法)
+            gsub(/^\|\|/, "", $1);
+            gsub(/\^$/, "", $1);
 
-            if ($1 != "") {
-                print "DOMAIN-SUFFIX,"$1
+            # 移除开头的 *. (如果存在的话，例如 *.example.com 变为 example.com)
+            gsub(/^\*\./, "", $1);
+
+            # 过滤掉包含斜杠 / 的规则 (表示路径或更复杂的URL规则，Clash DOMAIN-SUFFIX不支持)
+            # 过滤掉包含非域名字符的规则 (例如正则表达式，Clash DOMAIN-SUFFIX不支持)
+            # 这里只保留看起来像域名的规则（不含 / 且不含非字母数字点划线字符）
+            if ($1 !~ /^[#!]|^$|\/|[^\.a-zA-Z0-9-]/) {
+                # 再次清理可能残留在末尾的 / (比如 /example.com/)
+                gsub(/\/\s*$/, "", $1);
+                
+                # 检查是否是有效的域名格式（简单检查）
+                if ($1 ~ /^[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/) {
+                    print "DOMAIN-SUFFIX,"$1
+                } else {
+                    print "# Skipped non-domain rule: " $1 >> "/dev/stderr" # 输出到标准错误，方便调试
+                }
+            } else {
+                print "# Skipped complex rule: " $1 >> "/dev/stderr" # 输出到标准错误，方便调试
             }
-        }
         }' temp_adguard_hosts.txt > "$OUTPUT_FILE"
 
         if [ $? -ne 0 ]; then
