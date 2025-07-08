@@ -29,18 +29,15 @@ jobs:
         echo "Converting rules to Clash DOMAIN-SUFFIX format..."
         # 转换并过滤掉可能为空或注释的行
         awk '{
-        # 忽略注释行、空行和以 ! 开头的行
-        if ($1 !~ /^#|^!|^$/) {
-        # 移除 || 前缀和 ^ 后缀
-        gsub(/^\|\|/, "", $1); # 移除开头的 ||
-        gsub(/\^$/, "", $1);   # 移除结尾的 ^
+          if ($1 !~ /^#|^!|^$/) {
+          gsub(/^\|\|/, "", $1);
+          gsub(/\^$/, "", $1);
 
-        # 如果处理后域名不为空，则打印 Clash 规则
-        if ($1 != "") {
-            print "DOMAIN-SUFFIX,"$1
+            if ($1 != "") {
+                print "DOMAIN-SUFFIX,"$1
+            }
         }
-    }
-}' temp_adguard_hosts.txt > "$OUTPUT_FILE"
+        }' temp_adguard_hosts.txt > "$OUTPUT_FILE"
 
         if [ $? -ne 0 ]; then
             echo "Error: Failed to convert rules."
