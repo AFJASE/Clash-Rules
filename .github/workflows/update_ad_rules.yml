@@ -15,7 +15,7 @@ jobs:
 
     - name: Download and Convert AdGuardHome Rules
       run: |
-        ADGUARD_URL="https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt“
+        ADGUARD_URL="https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
         OUTPUT_FILE="adguard_clash_rules.list"
 
         echo "Downloading AdGuardHome rules from $ADGUARD_URL..."
