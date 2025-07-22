@@ -1,8 +1,9 @@
 # NAME: AppleMusic
 # Content: non streaming cdn proxy, only information flow proxy
-# UPDATED: 2025-07-04
+# UPDATED: 2025-07-22
 
 DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,radio-activity.itunes.apple.com
 DOMAIN-SUFFIX,itunes-apple.com.akadns.net
 DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,blobstore.apple.com
