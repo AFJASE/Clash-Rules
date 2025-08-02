@@ -1,11 +1,4 @@
-# NAME: AppleMusic
-# Content: Apple Music and related information flow
-# UPDATED: 2025-07-31
-
 DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,itunes.g.aaplimg.com
-DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,radio-activity.itunes.apple.com
 DOMAIN-SUFFIX,itunes-apple.com.akadns.net
