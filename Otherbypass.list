@@ -1,5 +1,5 @@
-DOMAIN,www.bing.com
-DOMAIN,appstorrent.ru
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,appstorrent.ru
 DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xhscdn.net
