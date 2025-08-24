@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,radio-activity.itunes.apple.com
 DOMAIN-SUFFIX,itunes-apple.com.akadns.net
 DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,music.apple.com
+DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,g.aaplimg.com
 DOMAIN-SUFFIX,p33-buy.itunes.apple.com
 PROCESS-NAME,Music
