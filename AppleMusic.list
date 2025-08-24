@@ -15,5 +15,6 @@ DOMAIN-SUFFIX,music.apple.com
 DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,g.aaplimg.com
 DOMAIN-SUFFIX,p33-buy.itunes.apple.com
+DOMAIN-KEYWORD,music
 PROCESS-NAME,Music
 IP-CIDR,17.253.84.0/23,no-resolve
