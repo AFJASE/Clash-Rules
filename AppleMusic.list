@@ -1,9 +1,9 @@
 DOMAIN-SUFFIX,aod-ssl.itunes.apple.com
-DOMAIN,aod.itunes.apple.com
+DOMAIN-SUFFIX,aod.itunes.apple.com
 DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
 DOMAIN-SUFFIX,audio.itunes.apple.com
-DOMAIN,mvod.itunes.apple.com
-DOMAIN,play.itunes.apple.com
+DOMAIN-SUFFIX,mvod.itunes.apple.com
+DOMAIN-SUFFIX,play.itunes.apple.com
 DOMAIN-SUFFIX,streamingaudio.itunes.apple.com
 DOMAIN-SUFFIX,librarydaap.itunes.apple.com
 DOMAIN-SUFFIX,fpinit.itunes.apple.com
