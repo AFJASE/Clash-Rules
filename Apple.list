@@ -2,6 +2,7 @@ DOMAIN-KEYWORD,aapl
 DOMAIN-KEYWORD,mzstatic
 DOMAIN-KEYWORD,itunes
 DOMAIN-KEYWORD,apple
+DOMAIN-KEYWORD,itunes-apple
 IP-CIDR,139.178.128.0/18,no-resolve
 IP-CIDR,144.178.0.0/19,no-resolve
 IP-CIDR,144.178.36.0/22,no-resolve
