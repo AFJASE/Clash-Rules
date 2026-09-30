@@ -2,4 +2,17 @@ DOMAIN-KEYWORD,aapl
 DOMAIN-KEYWORD,mzstatic
 DOMAIN-KEYWORD,itunes-apple
 DOMAIN-KEYWORD,apple-cdn
+DOMAIN-KEYWORD,cdn-apple
 DOMAIN-KEYWORD,amp-api.music.apple.com
+DOMAIN-KEYWORD,classical-api.music.apple.com
+DOMAIN-KEYWORD,xp.apple.com
+DOMAIN-KEYWORD,bag.itunes.apple.com
+DOMAIN-KEYWORD,p27-buy.itunes.apple.com
+DOMAIN-KEYWORD,fpinit.itunes.apple.com
+DOMAIN-KEYWORD,init.itunes.apple.com
+DOMAIN-KEYWORD,ocsp2.apple.com
+DOMAIN-KEYWORD,amp-api-edge.music.apple.com
+DOMAIN-KEYWORD,radio-activity.itunes.apple.com
+DOMAIN-KEYWORD,client-api.itunes.apple.com
+DOMAIN-KEYWORD,sf-api-token-service.itunes.apple.com
+DOMAIN-KEYWORD,cma.itunes.apple.com
