@@ -6,6 +6,7 @@ DOMAIN-KEYWORD,mzstatic
 DOMAIN-KEYWORD,itunes-apple
 DOMAIN-KEYWORD,apple-cdn
 DOMAIN-KEYWORD,cdn-apple
+DOMAIN-KEYWORD,amp-api
 DOMAIN-KEYWORD,iadsdk
 DOMAIN-KEYWORD,ocsp
 DOMAIN-KEYWORD,humb.apple.com
@@ -44,9 +45,4 @@ DOMAIN-KEYWORD,inappcheck.itunes.apple.com
 DOMAIN-KEYWORD,musicstatus.itunes.apple.com
 DOMAIN-KEYWORD,radio-activity.itunes.apple.com
 DOMAIN-KEYWORD,sf-api-token-service.itunes.apple.com
-DOMAIN-KEYWORD,amp-api.music.apple.com
-DOMAIN-KEYWORD,amp-api-edge.music.apple.com
-DOMAIN-KEYWORD,amp-api.media.apple.com
-DOMAIN-KEYWORD,amp-account.itunes.apple.com
-DOMAIN-KEYWORD,amp-api-edge.apps.apple.com
 DOMAIN-KEYWORD,classical-api.music.apple.com
