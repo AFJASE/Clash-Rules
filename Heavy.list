@@ -1,0 +1,10 @@
+DOMAIN-KEYWORD,youtu
+DOMAIN-KEYWORD,yt.be
+DOMAIN-KEYWORD,ggpht
+DOMAIN-KEYWORD,ytimg
+DOMAIN-KEYWORD,googlevideo
+DOMAIN-KEYWORD,aod.itunes.apple.com
+DOMAIN-KEYWORD,mvod.itunes.apple.com
+IP-CIDR,172.110.32.0/21,no-resolve
+IP-CIDR,216.73.80.0/20,no-resolve
+IP-CIDR6,2620:120:e000::/40,no-resolve
